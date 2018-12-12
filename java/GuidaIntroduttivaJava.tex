@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Guida all'utilizzo di java}
+\author{Eros Rossi}
+\date{December 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Installazione del Java JDK}
+\noindent Per sviluppare qualsiasi programma Java la prima cosa di cui abbiamo bisogno è il Java Development Kit (JDK). 
+
+Se non lo hai già installato sulla tua macchina (puoi verificarlo aprendo un terminale e provando a lanciare il comando \texttt{java}), allora procedi con l'installazione:
+
+\begin{itemize}
+\item Se hai Windows o macOS devi scaricare il Java JDK 8 dal sito web di Oracle https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html per il tuo sistema operativo, quindi eseguire il file scaricato per installarlo. 
+
+\item Se invece hai Linux, dovrai installare il pacchetto \texttt{openjdk-8-jdk} tramite il Software Center grafico o tramite il comando da terminale \texttt{sudo apt install openjdk-8-jdk}
+\end{itemize}
+
+\section{Installazione di BlueJ}
+Per l'installazione di BlueJ vai a questo link: www.bluej.org/versions.html e scarica la versione 4.1.4 per il tuo sistema operativo.
+\noindent A download terminato segui le istruzioni per installarlo sul tuo sistema operativo:
+
+\begin{itemize}
+    \item macOS: nella cartella troverai giá il file BlueJ.app e si puó semplicemente spostare nella cartella /Applicazioni di modo da vederlo in Lauchpad.
+    
+    \item Windows: ti verrá scaricato un installer, ti basterá lanciarlo e proseguire cliccando su ``avanti'' fino a che il programma sarà installato. Ad installazione terminata potrai avviare BlueJ dal menù Start.
+    
+    \item Linux: se hai Ubuntu, fai riferimento alla pagina: https://bluej.org/debian-ubuntu-oracle-java.html\#ubuntu-install. In sostanza dovrai installare il pacchetto .deb che puoi scaricare dal sito facendovi doppio click sopra o utilizzando il comando da terminal \texttt{dpkg -i}. 
+\end{itemize}
+
+\section{Creare un progetto}
+\noindent Per iniziare a scrivere il primo codice in Java seleziona dal menú in alto Progetto $\to$ Nuovo Progetto, inserisci il nome che preferisci e dove salvare il progetto; verrá creata una cartella contenente diversi file, dovrai occuparti solamente del file con estensione ".bluej".
+
+\noindent Premi ora su crea nuova classe per poter iniziare a scrivere il tuo codice dovrai solamente darle un nome; la classe verrá automaticamente inizializzata con un semplice esempio che adesso andremo ad analizzare; per aprire l'editor di testo basta semplicemente premere due volte sul file da modificare.
+
+\section{Struttura del codice Java}
+
+\noindent Ora iniziamo ad analizzare il codice del primo esempio.
+\subsection{Sezione 1: Le librerie}
+    \noindent La prima sezione del codice é la porzione di codice dove vengono dichiarate le librerie di Java per poter compilare il codice (maggiori informazioni riguardo alle librerie saranno fornite durante il corso).
+
+\subsection{Sezione 2: La classe}
+    \noindent In questa sezione viene dichiarata la classe il suo tipo (Public in questo caso) e le viene assegnato un nome (In java la classe principale e il file devono chiamarsi nello stesso modo). Questa classe racchiuderá la maggior parte del codice, fra le parentesi grafe possiamo dichiarare i metodi e le eventuali variabili globali (argomento trattato piú avanti nelle lezioni).
+    
+\subsection{Sezione 3: Il Main}
+    \noindent Osserviamo ora il metodo principale delle classe ossia il metodo main, questo é il core del nostro programma; all'interno possiamo scrivere il nostro codice ossia possiamo dichiarare variabili, eseguire delle stampe ed invocare altri metodi.
+    
+\subsection{Sezione 4: I Metodi}
+    \noindent I metodi sono delle funzioni che ci permettono di ottenere un codice piú leggibile, piú chiaro; nel codice allegato vedete una semplice implementazione dei metodi, essi necessitano di alcune variabili in ingresso (anche nessuna) ed una o nessuna variabile in uscita.
+
+\section{Compilazione}
+\noindent Una volta scritto il tuo codice in java premi su compila in alto a sinistra, in basso a sinistra vi apparirá il responso se il programma compila vuol dire che non sono presenti errori di scrittura ma possono essere presenti errori concettuali.
+
+\section{Eseguire un programma}
+\noindent Chiudi ora l'editor di testo, premi con il tasto destro sulla tua classe e premi su main, si aprirá un terminale che mostra le stampe del programma.
+La prima volta che andate sul terminale andate su opzioni e setta l'auto pulizia del terminale ogni volta che lanci un programma.
+
+\end{document}
+
