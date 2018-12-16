@@ -44,20 +44,43 @@ Per l'installazione di BlueJ vai a questo link: www.bluej.org/versions.html e sc
     \noindent La prima sezione del codice é la porzione di codice dove vengono dichiarate le librerie di Java per poter compilare il codice (maggiori informazioni riguardo alle librerie saranno fornite durante il corso).
 
 \subsection{Sezione 2: La classe}
-    \noindent In questa sezione viene dichiarata la classe il suo tipo (Public in questo caso) e le viene assegnato un nome (In java la classe principale e il file devono chiamarsi nello stesso modo). Questa classe racchiuderá la maggior parte del codice, fra le parentesi grafe possiamo dichiarare i metodi e le eventuali variabili globali (argomento trattato piú avanti nelle lezioni).
+    \noindent In questa sezione viene dichiarata la classe e le viene assegnato un nome (In Java la classe pubblica ed il file devono avere lo stesso nome, presta attenzione alle maiuscole!) é qui dentro che ti concentrerai a scrivere il tuo codice dove possiamo dichiarare i metodi e le variabili globali (argomento trattato più avanti nelle lezioni). Ogni classe contiene dati e metodi, i quali possiamo considerarli l'analogo delle funzioni del Python.
     
 \subsection{Sezione 3: Il Main}
-    \noindent Osserviamo ora il metodo principale delle classe ossia il metodo main, questo é il core del nostro programma; all'interno possiamo scrivere il nostro codice ossia possiamo dichiarare variabili, eseguire delle stampe ed invocare altri metodi.
+    \noindent Il metodo main é quello che viene chiamato per primo alla messa in esecuzione del codice. Il main accetta un parametro args che contiene i parametri specificati dalla riga di comando.
     
 \subsection{Sezione 4: I Metodi}
-    \noindent I metodi sono delle funzioni che ci permettono di ottenere un codice piú leggibile, piú chiaro; nel codice allegato vedete una semplice implementazione dei metodi, essi necessitano di alcune variabili in ingresso (anche nessuna) ed una o nessuna variabile in uscita.
+    \noindent I metodi sono delle funzioni che ci permettono di ottenere un codice più leggibile, più chiaro; nel codice allegato vedete una semplice implementazione dei metodi, essi necessitano di alcune variabili in ingresso (anche nessuna) ed una o nessuna variabile in uscita.
 
-\section{Compilazione}
-\noindent Una volta scritto il tuo codice in java premi su compila in alto a sinistra, in basso a sinistra vi apparirá il responso se il programma compila vuol dire che non sono presenti errori di scrittura ma possono essere presenti errori concettuali.
+\section{Compilazione ed Esecuzione}
+\noindent Una volta scritto il tuo codice in java, prima di poterlo eseguire, è necessario effettuare la compilazione dei files sorgente. Ricordati di salvarli con lo stesso nome della classe principale che contengono.
 
-\section{Eseguire un programma}
-\noindent Chiudi ora l'editor di testo, premi con il tasto destro sulla tua classe e premi su main, si aprirá un terminale che mostra le stampe del programma.
-La prima volta che andate sul terminale andate su opzioni e setta l'auto pulizia del terminale ogni volta che lanci un programma.
+\subsection{Da linea di comando}
+Per compilare ed eseguire un programma Java dal terminale, è necessario fare i seguenti passi:
+\begin{itemize}
+\item Salvare il programma in un file con estensione \textit{.java} che deve obbligatoriamente chiamarsi come la classe contenuta (puoi fare una prova con il file \textit{PrimoEsempio.java})
+
+\item Spostarsi con il terminale nella directory dove si è salvato questo file
+
+\item Per compilare il programma lanciare il comando \texttt{javac <nomefile>.java}, per esempio \texttt{javac PrimoEsempio.java}. Se il programma non contiene errori, viene compilato e viene prodotto un file bytecode \texttt{<nomefile>.class}
+
+\item Per eseguire il programma lanciare \texttt{java <nomefile>}, per esempio \texttt{java PrimoEsempio}
+\end{itemize}
+
+
+\subsection{Tramite IDE BlueJ}
+\noindent Per creare un progetto dal quale potremo compilare ed eseguire un programma tramite IDE BlueJ, è necessario fare i seguenti passi:
+\begin{itemize}
+\item Dopo aver aperto BlueJ clicca su \textit{Project} in alto a sinistra. 
+\item Dal menu a tendina clicca su \textit{New project...} e dalla finestra che appare scegli dove il tuo nuovo progetto dovrà essere creato e digita il nome che dovrà avere nel campo \textit{Folder Name}.
+\item Crea una nuova classe con il pulsante \textit{New Class...}. Poi digita il suo nome, per esempio, \textit{PrimoEsempio} e mantieni la scelta su \textit{Class}. Clicca \textit{Ok}.
+\item Vedrai comparire un rettangolo con il nome che hai scelto. Fai doppio click su di esso per modificarlo dato che per ora contiene un programma di esempio. Completa la scrittura del file sorgente oppure copia e incolla il codice da un altro file.
+\item Per compilare clicca sul pulsante \textit{Compile}. Se non ci sono problemi vedrai che le righe del rettangolo con il nome della tua classe spariranno. Puoi chiudere la finestra di modifica del file sorgente.
+\item Se la classe contiene anche un metodo \texttt{void main(String args[])} possiamo lanciarlo cliccando con il tasto destro del mouse sul rettangolo della nostra classe per poi cliccare \textit{void main(String args[])} 
+\item Manteni la scelta su \texttt{\{\}} ovvero non vogliamo passare nessun input. Vedrai comparire una schermata che corrisponde a un terminale (nel caso non succedesse clicca su \textit{View} e poi \textit{Show Terminal}.
+\item Se ci fossero degli input da inserire lo puoi fare dal terminale.
+\end{itemize}
+Dal terminale: cliccando su \textit{Options} puoi selezionare \textit{Clear screen at method call} per fare in modo che a ogni lancio di programma la storia di stampe a video venga resettata.
 
 \end{document}
 
